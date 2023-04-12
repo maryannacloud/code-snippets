@@ -25,7 +25,7 @@ has a frequesncy grates than 1.
 4. We can also use a nested loop to solve this.
 
  */
-public class DuplicateCheckInArray {
+public class CheckDuplicatesInArray {
     public static void main(String[] args) {
 
         int[] givenArray = {3, 5, 7, 8, 3};
