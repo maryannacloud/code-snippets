@@ -79,8 +79,8 @@ public class TargetIndices {
         // data for Approach#3:
         int[] givenArray3 = {2, 7, 11, 15};
         int target3 = 9;
-        int[] outputArray = findIndices(givenArray3, target3);
-        System.out.println("Output: " + Arrays.toString(outputArray));
+        int[] outputArrayOnePassHashTable = findIndicesOnePassHashTable(givenArray3, target3);
+        System.out.println("Output: " + Arrays.toString(outputArrayOnePassHashTable));
     }
 
     // Approach #1:
@@ -116,7 +116,7 @@ public class TargetIndices {
     }
 
     // Approach #3:
-    public static int[] findIndices (int[] nums, int target){
+    public static int[] findIndicesOnePassHashTable (int[] nums, int target){
 
         // declaring a HashMap Object, so that we have a storage space for our key(number) = value(index) pairs:
         Map<Integer, Integer> map = new HashMap<>();
