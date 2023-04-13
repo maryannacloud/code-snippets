@@ -70,6 +70,12 @@ public class TargetIndices {
         int[] outputArrayBruteForce = findIndicesBruteForce(givenArray1, target1);
         System.out.println("Output: " + Arrays.toString(outputArrayBruteForce));
 
+        // data for Approach#2:
+        int[] givenArray2 = {3,3};
+        int target2 = 6;
+        int[] outputArrayTwoPassHashTable = findIndicesTwoPassHashTable(givenArray2, target2);
+        System.out.println("Output: " + Arrays.toString(outputArrayTwoPassHashTable));
+
         // data for Approach#3:
         int[] givenArray3 = {2, 7, 11, 15};
         int target3 = 9;
@@ -85,6 +91,25 @@ public class TargetIndices {
                 if (nums[i] + nums[j] == target){
                     return new int[]{i, j};
                 }
+            }
+        }
+        throw new IllegalArgumentException("No solution found");
+    }
+
+    // Approach #2:
+    public static int[] findIndicesTwoPassHashTable (int[] nums, int target) {
+
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++){
+            map.put(nums[i], i);
+        }
+
+        for (int i = 0; i < nums.length; i++){
+            int complement = target - nums[i];
+
+            if (map.containsKey(complement) && map.get(complement) != i){
+                return new int[]{i, map.get(complement)};
             }
         }
         throw new IllegalArgumentException("No solution found");
