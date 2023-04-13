@@ -63,11 +63,31 @@ Pseudo-code (approaches):
 public class TargetIndices {
 
     public static void main(String[] args) {
-        int[] givenArray = {2, 7, 11, 15};
-        int target = 9;
 
-        int[] outputArray = findIndices(givenArray, target);
+        // data for Approach#1:
+        int[] givenArray1 = {3,2,4};
+        int target1 = 6;
+        int[] outputArrayBruteForce = findIndicesBruteForce(givenArray1, target1);
+        System.out.println("Output: " + Arrays.toString(outputArrayBruteForce));
+
+        // data for Approach#3:
+        int[] givenArray3 = {2, 7, 11, 15};
+        int target3 = 9;
+        int[] outputArray = findIndices(givenArray3, target3);
         System.out.println("Output: " + Arrays.toString(outputArray));
+    }
+
+    // Approach #1:
+    public static int[] findIndicesBruteForce (int[] nums, int target) {
+
+        for (int i = 0; i < nums.length; i++){
+            for (int j = i + 1; j < nums.length; j++){
+                if (nums[i] + nums[j] == target){
+                    return new int[]{i, j};
+                }
+            }
+        }
+        throw new IllegalArgumentException("No solution found");
     }
 
     // Approach #3:
@@ -91,6 +111,6 @@ public class TargetIndices {
                 return new int[] {map.get(complement), i};
             }
         }
-        return null;
+        throw new IllegalArgumentException("No solution found");
     }
 }
