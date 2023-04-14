@@ -33,8 +33,8 @@ public class MaxNumArray {
 
         int max = array[0];
         for (int element : array){
-            if (array[element] >= max){
-                max = array[element];
+            if (element >= max){
+                max = element;
             }
         }
         return max;
