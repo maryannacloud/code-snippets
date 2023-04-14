@@ -10,7 +10,7 @@ public class MaxNumArray {
 
         // Example 2 data:
         int[] givenArray2 = {1, 2, 3, 4567, 6, 1, 455678, 0, 5};
-        System.out.println("The maximum number in an array is: " + findMax2(givenArray1));
+        System.out.println("The maximum number in an array is: " + findMax2(givenArray2));
 
     }
 
