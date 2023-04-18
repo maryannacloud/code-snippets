@@ -10,6 +10,7 @@ public class RemoveWithoutRemove {
         String input = "this2isth2esent2en2cewit2htwo22esi2nit";
         System.out.println(removeTwoStringBuilder(input));
         System.out.println(removeTwoStream(input));
+        System.out.println(removeTwoCharArray(input));
     }
 
     public static String removeTwoStringBuilder(String input) {
@@ -33,5 +34,17 @@ public class RemoveWithoutRemove {
                 .collect(Collectors.joining());
     }
 
+    public static String removeTwoCharArray(String input) {
+        char[] inputChars = input.toCharArray();
+        int count = 0;
+
+        for (int i = 0; i < inputChars.length; i++) {
+            if (inputChars[i] != '2') {
+                inputChars[count++] = inputChars[i];
+            }
+        }
+
+        return new String(inputChars, 0, count);
+    }
 
 }
