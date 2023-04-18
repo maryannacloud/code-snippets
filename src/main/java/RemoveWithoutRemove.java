@@ -3,13 +3,16 @@ Task: write the program to remove number 2 from the string without using the rem
       this2isth2esent2en2cewit2htwo22esi2ni
 */
 
+import java.util.stream.Collectors;
+
 public class RemoveWithoutRemove {
     public static void main(String[] args) {
         String input = "this2isth2esent2en2cewit2htwo22esi2nit";
-        System.out.println(removeTwo(input));
+        System.out.println(removeTwoStringBuilder(input));
+        System.out.println(removeTwoStream(input));
     }
 
-    public static String removeTwo(String input) {
+    public static String removeTwoStringBuilder(String input) {
         StringBuilder sb = new StringBuilder();
 
         for (int i = 0; i < input.length(); i++) {
@@ -21,4 +24,14 @@ public class RemoveWithoutRemove {
 
         return sb.toString();
     }
+
+    public static String removeTwoStream(String input) {
+        return input.chars()
+                .filter(ch -> ch != '2')
+                .mapToObj(ch -> (char) ch)
+                .map(String::valueOf)
+                .collect(Collectors.joining());
+    }
+
+
 }
