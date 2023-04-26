@@ -12,6 +12,7 @@ Write an efficient algorithm for the following assumptions:
       - each element of an array A is an integer with the range [-1,000,000...1,000,000].
  */
 
+// Approach 1: using two for loops
 public class FindSmallestPositiveInArray {
 
     // the time complexity of the method below is O(n), where n is the length of the "givenArray":
