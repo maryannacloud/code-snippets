@@ -19,7 +19,7 @@ import java.util.Arrays;
 
 public class CheckStringsAnagramOrNot {
 
-    public static boolean isAnagram (String str1, String str2) {
+    public boolean isAnagram (String str1, String str2) {
         char[] charArray1 = str1.toCharArray();
         char[] charArray2 = str2.toCharArray();
 
