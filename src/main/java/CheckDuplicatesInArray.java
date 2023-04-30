@@ -9,7 +9,7 @@ Write a method that returns true if the array contains a duplicate value, false 
 
 Pseudo-code (approaches):
 1. Since all we have to do is check whether the array contains duplicate numbers or not,
-   but we dont have to actually find those duplicates and print them out, we can first
+   but we don't have to actually find those duplicates and print them out, we can first
    add all the numbers in the array into a Set, and then compare their sizes. Why Set?
 
 Set is a Collection that contains no duplicate elements, and when we attempt to add an
@@ -18,7 +18,7 @@ and only store the unique elements.
 
 2. We can solve this using Map Interface as well. First, we would create the method, which
 uses Map to store frequency of each element in the given array, and then check if any element
-has a frequesncy grates than 1.
+has a frequency grates than 1.
 
 3. We can sort the array and compare the elements next to each other.
 
