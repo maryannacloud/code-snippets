@@ -7,7 +7,6 @@ TASK: you are given an integer array "prices", where prices[i] is the price of a
 
 Approach: "Greedy" algorithm. There is a thing in programming, called "greedy algorithm".
 Pseudo-code:
-
  */
 
 public class BestTimeToBuyAndSell {
