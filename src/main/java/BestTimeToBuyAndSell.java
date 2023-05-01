@@ -10,9 +10,22 @@ Pseudo-code:
 
  */
 
-
-
 public class BestTimeToBuyAndSell {
 
+    public int maxProfit(int[] prices) {
+        double minPrice = Double.POSITIVE_INFINITY;
+        double maxProfit = 0.0;
 
+        for (int price : prices) {
+            if (price < minPrice) {
+                minPrice = price;
+            } else {
+                double profit = price - minPrice;
+                if (profit > maxProfit) {
+                    maxProfit = profit;
+                }
+            }
+        }
+        return (int) maxProfit;
+    }
 }
