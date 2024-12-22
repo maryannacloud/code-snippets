@@ -1,11 +1,11 @@
-/*
+package MergingArraysApproaches;/*
 Write a Java program to merge two arrays of numbers into one.
  */
 
 
 import java.util.Arrays;
 
-public class MergeArrays {
+public class MergeArraysArrayCopyMethod {
     public static void main(String[] args) {
         int[] array1 = {8, 9, 3, 5, 6};
         int[] array2 = {4, 7, 2, 8, 6};

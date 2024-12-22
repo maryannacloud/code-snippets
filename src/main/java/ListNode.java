@@ -19,7 +19,7 @@ Output: [1]
 
 Constraints: the number of nodes in the list is in the range [0, 100] (0 <= Node.val <= 100).
 
-Pseudo-code (analyzing and understanding the problem):
+Pseudocode (analyzing and understanding the problem):
 1. Iterative Approach (Time complexity: O(n)):  traverse the linked list and swap adjacent nodes while updating the connections between the pairs.
    The logic behind this approach is based on the observation that we need to swap pairs of nodes, and the iterative process can help us achieve this without recursion.
    This approach has a time complexity of O(n) because it traverses the list once, processing each pair of nodes in a single pass.

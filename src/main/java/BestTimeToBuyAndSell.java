@@ -6,8 +6,9 @@ TASK: you are given an integer array "prices", where prices[i] is the price of a
       Find and return the maximum profit you can achieve.
 
 Approach: "Greedy" algorithm. There is a thing in programming, called "greedy algorithm".
-Pseudo-code:
- */
+Pseudocode:
+
+*/
 
 public class BestTimeToBuyAndSell {
 
