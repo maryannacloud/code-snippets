@@ -1,3 +1,5 @@
+package ArrayManipulations;
+
 /*
 TASK: create an array of random numbers and write the code to find the max number in that array.
  */

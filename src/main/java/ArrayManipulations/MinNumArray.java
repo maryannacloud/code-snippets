@@ -1,4 +1,4 @@
-/*
+package ArrayManipulations;/*
 TASK:
 1. Given the following array of numbers, write a method that finds the minimum number:
    nums = [1, 2, 3, 4567, 6, 1, 455678, 0, 5];

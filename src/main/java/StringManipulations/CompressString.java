@@ -1,4 +1,4 @@
-/*
+package StringManipulations;/*
 TASK: given the following String - "aabbbccccd",
       write the method that will compress the String and provide the following output:
 

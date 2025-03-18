@@ -1,4 +1,4 @@
-/*
+package StringManipulations;/*
     Find the length of a given string
 */
 

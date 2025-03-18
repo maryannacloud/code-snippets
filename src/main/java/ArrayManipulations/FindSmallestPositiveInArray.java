@@ -1,4 +1,4 @@
-/*
+package ArrayManipulations;/*
 TASK: given an Array A of N integers, write a method, which returns the smallest positive integer (greater than 0),
       that does not occur in the Array A.
 

@@ -1,4 +1,7 @@
+package StringManipulations;
+
 /*
+
 TASK: given the following String - "This is Java Program",
       write the method that will put the words in the reverse order.
 
@@ -13,7 +16,8 @@ Pseudo-code(approaches):
    NOTE: .append() is used to concatenate (join) the specified value to the current character sequence in the StringBuilder object.
 
 3. Using simple for loop.
- */
+
+*/
 
 public class ReverseWordsInString {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-/*
+package StringManipulations;/*
 Task: write the program to remove number 2 from the string without using the remove method
       this2isth2esent2en2cewit2htwo22esi2ni
 */

@@ -1,4 +1,4 @@
-/*
+package StringManipulations;/*
 TASK: given two Strings, return true if one of them is an anagram of another, and false otherwise.
 
 NOTE: Anagram - a word or a phrase formed by rearranging the letters of a different word or phrase,
