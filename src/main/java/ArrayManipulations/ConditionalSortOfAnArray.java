@@ -12,9 +12,21 @@ public class ConditionalSortOfAnArray {
         try {
             System.out.print("Enter the number of elements in the array: ");
             int size = scanner.nextInt();
+            scanner.nextLine();
+
+            if (size <= 0) {
+                throw new IllegalArgumentException(("Array size must be greater than 0."));
+            }
+
+            System.out.println("Enter " + size + " integers, separated by spaces: ");
+            String inputLine = scanner.nextLine();
+            String[] tokens = inputLine.trim().split("\\s+");
+
+            if (tokens.length != size) {
+                throw new IllegalArgumentException("Expected " + size + " numbers, but received " + tokens.length + ".");
+            }
 
             int[] numbers = new int[size];
-            System.out.println("Enter " + size + " integers");
             for (int i = 0; i < size; i++) {
                 numbers[i] = scanner.nextInt();
             }
@@ -29,6 +41,10 @@ public class ConditionalSortOfAnArray {
             bubbleSort(numbers, sortType.toUpperCase());
             System.out.println("Sorted Array: " + Arrays.toString(numbers));
 
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Please enter valid integers.");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Error: Array size does not match the number of inputs provided.");
         } catch (IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
         } catch (Exception e) {
