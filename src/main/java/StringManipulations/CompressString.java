@@ -91,4 +91,21 @@ public class CompressString {
         return compressed;
     }
 
+    public static String decode(String str){
+        StringBuilder sb = new StringBuilder();
+        int count = 1;
+
+        for(int i=1; i<str.length(); i++){
+            if(str.charAt(i-1) == str.charAt(i)){
+                count++;
+            }else{
+                sb.append(str.charAt(i-1)).append("-").append(count).append("\n");
+                count = 1;
+            }
+        }
+
+        sb.append(str.charAt(str.length()-1)).append("-").append(count).append("\n");
+        return sb.toString();
+    }
+
 }
