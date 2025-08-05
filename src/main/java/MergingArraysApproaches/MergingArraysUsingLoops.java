@@ -21,7 +21,5 @@ public class MergingArraysUsingLoops {
         for (int num : mergedArray){
             System.out.print(num + " ");
         }
-
     }
-
 }
