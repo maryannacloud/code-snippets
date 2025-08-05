@@ -1,4 +1,4 @@
-package Lesson2;
+package Revision2;
 
 public class ArrayManipulations {
 
