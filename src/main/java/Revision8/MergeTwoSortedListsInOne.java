@@ -21,7 +21,29 @@ public class MergeTwoSortedListsInOne {
 
         List<Integer> merged = new ArrayList<>();
 
+        int i = 0;
+        int j = 0;
 
+        while (i < nums1.size() && j < nums2.size()){
+            if (nums1.get(i) < nums2.get(j)){
+                merged.add(nums1.get(i++));
+            } else if (nums1.get(i) > nums2.get(j)){
+                merged.add(nums2.get(j++));
+            } else {
+                merged.add(nums1.get(i++));
+                merged.add(nums2.get(j++));
+            }
+        }
 
+        while (i < nums1.size()) {
+            merged.add(nums1.get(i++));
+        }
+        while (j < nums2.size()) {
+            merged.add(nums2.get(j++));
+        }
+
+        for (int k = 0; k < merged.size(); k++){
+            System.out.println(merged.get(k));
+        }
     }
 }

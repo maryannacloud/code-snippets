@@ -16,6 +16,5 @@ public class MergingArraysUsingListAndConversion {
         Integer[] mergedArray = list.toArray(new Integer[0]);
 
         System.out.println("Merged array: " + Arrays.toString(mergedArray));
-
     }
 }
