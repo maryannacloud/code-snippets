@@ -1,8 +1,6 @@
 package Revision8;
 
-import java.util.Arrays;
-
-public class CountVowelsAndConsonants {
+public class CountVowelsAndConsonantsReviewed {
 
     // vowels: A, E, I, O, U
 
