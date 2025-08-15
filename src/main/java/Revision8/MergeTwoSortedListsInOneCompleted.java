@@ -3,7 +3,7 @@ package Revision8;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MergeTwoSortedListsInOne {
+public class MergeTwoSortedListsInOneCompleted {
 
     public static void main(String[] args) {
 
