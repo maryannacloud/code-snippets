@@ -16,15 +16,19 @@ public class PrintMostRepeatedStringCompleted {
         str = str.replace(".", "");
         str = str.toLowerCase();
 
-        String[] words = str.split("\\s+");
+        String[] words = str.split(" ");
 
 
         Map<String, Integer> mapWordsToCount = new HashMap<>();
 
-        for (int i = 0; i < words.length; i++){
-            String w = words[i];
-            mapWordsToCount.put(w, mapWordsToCount.getOrDefault(w, 0) + 1);
+        for (String word : words){
+            if (!mapWordsToCount.containsKey(word)) {
+                mapWordsToCount.put(word, 1);
+            } else {
+                mapWordsToCount.put(word, mapWordsToCount.get(word) + 1);
+            }
         }
+
 
         String most = null;
         int max = 0;

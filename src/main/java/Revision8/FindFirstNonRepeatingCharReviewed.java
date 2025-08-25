@@ -3,13 +3,14 @@ package Revision8;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindFirstNonRepeatingCharCompleted {
+public class FindFirstNonRepeatingCharReviewed {
 
     // String: "aaabbbccddddeffggg"
 
+
     public static void main(String[] args) {
 
-        String str = "aaabbbccddddeffgggh";
+        String str = "zacdeb";
 
         char[] chars = str.toCharArray();
 

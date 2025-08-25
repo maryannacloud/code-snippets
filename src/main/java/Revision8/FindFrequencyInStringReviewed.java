@@ -3,7 +3,7 @@ package Revision8;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindFrequencyInStringCompleted {
+public class FindFrequencyInStringReviewed {
 
     // Input: "Hello World 123! Hello, Java"
 
