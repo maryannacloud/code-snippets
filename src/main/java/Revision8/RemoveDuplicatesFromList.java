@@ -10,9 +10,6 @@ public class RemoveDuplicatesFromList {
 
         Set<Integer> setOfNums = new HashSet<>(nums);
 
-
         System.out.println(setOfNums);
-
-
     }
 }
