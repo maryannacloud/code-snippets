@@ -1,3 +1,5 @@
+package Revision10;
+
 public class Revision10 {
 
     class Solution {
