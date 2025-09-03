@@ -9,15 +9,12 @@ public class PrimeNumber {
 
         String responseMessage = "";
 
-        if (num <= 1) {
-            responseMessage = "Please enter the number that is more than 1";
-        } else {
-            if (num == 2 || num % 2 != 0) {
-                responseMessage = "Number " + num + " is a prime number!";
-            } else {
-                responseMessage = "Number " + num + " is not a prime number!";
+        for (int i = 2; i < num; i++) {
+            if (num % i != 0){
+
             }
         }
+
         return responseMessage;
     }
 }
